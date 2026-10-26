@@ -1,0 +1,14 @@
+pandas>=2.2,<3.0
+matplotlib>=3.10
+ipykernel>=7.0
+nbclient>=0.10
+nbformat>=5.10
+jsonschema<4.18
+huggingface_hub>=0.35,<1.0
+fsspec>=2024.6
+ipywidgets>=8.1
+python-dotenv>=1.0
+requests>=2.32
+scikit-learn>=1.5
+pyarrow>=18
+laya>=0.3.20,<0.4

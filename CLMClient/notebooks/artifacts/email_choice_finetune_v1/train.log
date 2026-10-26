@@ -1,0 +1,30 @@
+[choice] /mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_typed_choice [all] rows train 7762 val 862 test 2156 | questions train 7762 val 862 test 2156
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[choice] embedding 10079 unique texts
+[embed] server 64/10079
+[embed] server 3264/10079
+[embed] server 6464/10079
+[embed] server 9664/10079
+[choice] warm start /root/.cache/clm/CLM_v0.1-8B.pt {'width': 1536, 'depth': 3, 'activation': 'gelu', 'layernorm': True, 'residual': False}
+[choice] baselines {"majority_val": 0.14733178654292342, "majority_test": 0.16697588126159554}
+[choice] epoch 0 (init) val acc 0.3364 test acc 0.3237
+[choice] epoch 1 loss 1.8827 val acc 0.4385 soft_ce 1.1746
+[choice] epoch 2 loss 0.7350 val acc 0.9432 soft_ce 0.3084
+[choice] epoch 3 loss 0.1757 val acc 0.9687 soft_ce 0.1043
+[choice] epoch 4 loss 0.0966 val acc 0.9733 soft_ce 0.0723
+[choice] epoch 5 loss 0.0677 val acc 0.9803 soft_ce 0.0648
+[choice] epoch 6 loss 0.0566 val acc 0.9803 soft_ce 0.0650
+[choice] epoch 7 loss 0.0451 val acc 0.9791 soft_ce 0.0645
+[choice] epoch 8 loss 0.0445 val acc 0.9872 soft_ce 0.0465
+[choice] epoch 9 loss 0.0395 val acc 0.9872 soft_ce 0.0445
+[choice] epoch 10 loss 0.0314 val acc 0.9884 soft_ce 0.0413
+[choice] epoch 11 loss 0.0310 val acc 0.9872 soft_ce 0.0432
+[choice] epoch 12 loss 0.0248 val acc 0.9896 soft_ce 0.0383
+[choice] epoch 13 loss 0.0236 val acc 0.9884 soft_ce 0.0386
+[choice] epoch 14 loss 0.0230 val acc 0.9884 soft_ce 0.0460
+[choice] epoch 15 loss 0.0184 val acc 0.9884 soft_ce 0.0432
+[choice] epoch 16 loss 0.0174 val acc 0.9872 soft_ce 0.0445
+[choice] epoch 17 loss 0.0138 val acc 0.9896 soft_ce 0.0376
+[choice] early stop at epoch 17
+[choice] best epoch 12: val acc 0.9896 | TEST acc 0.9828 (init 0.3237, majority 0.1670) per_question {'category': 0.9828}
+[done] {"best_epoch": 12, "val_acc": 0.9895591647331786, "test": {"acc": 0.9828385899814471, "soft_ce": 0.04639162336077009, "per_question": {"category": 0.9828}}, "init_test": {"acc": 0.323747680890538, "soft_ce": 3.0237672483766236, "per_question": {"category": 0.3237}}, "majority_val": 0.14733178654292342, "majority_test": 0.16697588126159554, "train_questions": 7762, "minutes": 3.38}

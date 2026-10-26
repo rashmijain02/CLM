@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-10-07T09:06:17.565072+00:00",
+  "dataset": "jason23322/high-accuracy-email-classifier",
+  "dataset_file": "test.json",
+  "test_rows": 2697,
+  "evaluation_rows": 2697,
+  "random_state": 42,
+  "temperature": 0.1,
+  "labels": [
+    "forum",
+    "promotions",
+    "social_media",
+    "spam",
+    "updates",
+    "verify_code"
+  ],
+  "criteria": {
+    "forum": "Community forum conversations, discussion threads, group posts, replies, or member activity notifications.",
+    "promotions": "Legitimate marketing, sales, discounts, product offers, newsletters, or commercial campaigns.",
+    "social_media": "Notifications from social networks about follows, likes, mentions, direct activity, groups, or recommended content.",
+    "spam": "Unsolicited, deceptive, suspicious, irrelevant, or low-quality bulk messages, including scams and phishing-like content.",
+    "updates": "Operational, account, product, service, order, billing, travel, or informational status updates that are not verification codes.",
+    "verify_code": "One-time passwords, authentication codes, account verification codes, login codes, or security confirmation tokens."
+  },
+  "clm_base_url": "http://127.0.0.1:8700",
+  "clm_model": "clm-latest",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "2.2.3",
+  "numpy": "2.5.3"
+}

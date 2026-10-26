@@ -1,0 +1,61 @@
+{
+ "best_epoch": 15,
+ "val_acc": 0.9895591647331786,
+ "test": {
+  "acc": 0.988404452690167,
+  "soft_ce": 0.034271473787268816,
+  "per_question": {
+   "category": 0.9884
+  }
+ },
+ "init_test": {
+  "acc": 0.323747680890538,
+  "soft_ce": 3.0237672483766236,
+  "per_question": {
+   "category": 0.3237
+  }
+ },
+ "majority_val": 0.14733178654292342,
+ "majority_test": 0.16651205936920221,
+ "train_questions": 7762,
+ "minutes": 0.29,
+ "args": {
+  "task": "choice",
+  "out_dir": "/mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_choice_finetune_seed2026",
+  "benchmark": null,
+  "emb_dir": null,
+  "hf_dataset": null,
+  "data": "/mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_typed_choice",
+  "workflow": "all",
+  "hf_cache": null,
+  "hf_split": null,
+  "embed_model": "Qwen/Qwen3-8B",
+  "embed_url": "http://127.0.0.1:8090/v1/embeddings",
+  "served_model_name": "qwen3-8b",
+  "max_len": 2048,
+  "gpu_mem": 0.85,
+  "embed_cache": "/mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_choice_finetune_v1/embeddings",
+  "init_ckpt": "/root/.cache/clm/CLM_v0.1-8B.pt",
+  "width": null,
+  "depth": null,
+  "proj": 512,
+  "epochs": 30,
+  "batch": 256,
+  "lr": 0.0005,
+  "weight_decay": 0.0001,
+  "val_frac": 0.1,
+  "patience": 5,
+  "seed": 2026,
+  "gpu": 0,
+  "holdout_folds": null,
+  "holdout_tasks": null,
+  "folds": null,
+  "fold_index": null,
+  "fold_config": null,
+  "sampler": "random",
+  "tasks_per_batch": 4,
+  "clm_select_metric": "within_task_top1",
+  "targets": "hard",
+  "loss": "softce"
+ }
+}

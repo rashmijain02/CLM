@@ -1,5 +1,7 @@
 # API keys
 .env
+# OS metadata
+.DS_Store
 # Checkpoints and embedding stores (download from HF)
 checkpoints/
 data/

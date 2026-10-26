@@ -1,0 +1,23 @@
+[choice] /mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_typed_choice [all] rows train 7762 val 862 test 2156 | questions train 7762 val 862 test 2156
+[choice] embedding cache: 10079 texts from /mnt/h/masterswork/gitrash/CLM/CLMClient/notebooks/artifacts/email_choice_finetune_v1/embeddings/choice_Qwen_Qwen3-8B_2048.npz
+[choice] warm start /root/.cache/clm/CLM_v0.1-8B.pt {'width': 1536, 'depth': 3, 'activation': 'gelu', 'layernorm': True, 'residual': False}
+[choice] baselines {"majority_val": 0.15661252900232017, "majority_test": 0.16651205936920221}
+[choice] epoch 0 (init) val acc 0.3283 test acc 0.3237
+[choice] epoch 1 loss 1.8726 val acc 0.4536 soft_ce 1.1534
+[choice] epoch 2 loss 0.7054 val acc 0.9362 soft_ce 0.3075
+[choice] epoch 3 loss 0.1691 val acc 0.9698 soft_ce 0.1193
+[choice] epoch 4 loss 0.0909 val acc 0.9756 soft_ce 0.1099
+[choice] epoch 5 loss 0.0631 val acc 0.9710 soft_ce 0.1148
+[choice] epoch 6 loss 0.0615 val acc 0.9745 soft_ce 0.1113
+[choice] epoch 7 loss 0.0516 val acc 0.9756 soft_ce 0.0917
+[choice] epoch 8 loss 0.0430 val acc 0.9803 soft_ce 0.0862
+[choice] epoch 9 loss 0.0347 val acc 0.9814 soft_ce 0.0724
+[choice] epoch 10 loss 0.0286 val acc 0.9872 soft_ce 0.0649
+[choice] epoch 11 loss 0.0264 val acc 0.9814 soft_ce 0.0730
+[choice] epoch 12 loss 0.0267 val acc 0.9861 soft_ce 0.0638
+[choice] epoch 13 loss 0.0187 val acc 0.9780 soft_ce 0.1034
+[choice] epoch 14 loss 0.0234 val acc 0.9780 soft_ce 0.0932
+[choice] epoch 15 loss 0.0188 val acc 0.9838 soft_ce 0.0670
+[choice] early stop at epoch 15
+[choice] best epoch 10: val acc 0.9872 | TEST acc 0.9814 (init 0.3237, majority 0.1665) per_question {'category': 0.9814}
+[done] {"best_epoch": 10, "val_acc": 0.9872389791183295, "test": {"acc": 0.9814471243042672, "soft_ce": 0.04683844189475773, "per_question": {"category": 0.9814}}, "init_test": {"acc": 0.323747680890538, "soft_ce": 3.0237672483766236, "per_question": {"category": 0.3237}}, "majority_val": 0.15661252900232017, "majority_test": 0.16651205936920221, "train_questions": 7762, "minutes": 0.24}

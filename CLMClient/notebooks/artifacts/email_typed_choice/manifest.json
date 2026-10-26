@@ -1,0 +1,64 @@
+{
+  "created_at_utc": "2026-10-07T08:46:54.374145+00:00",
+  "source_dataset": "jason23322/high-accuracy-email-classifier",
+  "random_state": 42,
+  "development_fraction": 0.2,
+  "request_contract": {
+    "instructions": "Classify this email into exactly one category. Use the subject and body together. Choose the most specific category represented by the email's primary purpose.",
+    "criteria": {
+      "forum": "Community forum conversations, discussion threads, group posts, replies, or member activity notifications.",
+      "promotions": "Legitimate marketing, sales, discounts, product offers, newsletters, or commercial campaigns.",
+      "social_media": "Notifications from social networks about follows, likes, mentions, direct activity, groups, or recommended content.",
+      "spam": "Unsolicited, deceptive, suspicious, irrelevant, or low-quality bulk messages, including scams and phishing-like content.",
+      "updates": "Operational, account, product, service, order, billing, travel, or informational status updates that are not verification codes.",
+      "verify_code": "One-time passwords, authentication codes, account verification codes, login codes, or security confirmation tokens."
+    }
+  },
+  "partitions": {
+    "fit": {
+      "rows": 8624,
+      "class_counts": {
+        "forum": 1440,
+        "promotions": 1437,
+        "social_media": 1437,
+        "spam": 1435,
+        "updates": 1435,
+        "verify_code": 1440
+      },
+      "ids_sha256": "d14dba0991065bd94d71fb5c42f8fe35074d5faf1f6418713edbb7c8927af20e",
+      "file": "H:\\masterswork\\gitrash\\CLM\\CLMClient\\notebooks\\artifacts\\email_typed_choice\\all\\train.parquet",
+      "file_sha256": "dbe0df524af729569a528255d71e3b3965e0bd58a042b81440dafe1f18018f9c"
+    },
+    "development": {
+      "rows": 2156,
+      "class_counts": {
+        "forum": 360,
+        "promotions": 359,
+        "social_media": 359,
+        "spam": 359,
+        "updates": 359,
+        "verify_code": 360
+      },
+      "ids_sha256": "2a3717c3b5efb082491764763676690ac9ad718b293063881d50f29cd4b4c0ea",
+      "file": "H:\\masterswork\\gitrash\\CLM\\CLMClient\\notebooks\\artifacts\\email_typed_choice\\all\\test.parquet",
+      "file_sha256": "91b40c5fe5b9cdfb9aa19a71b826d742c3ed2393f0a84244cabc5eeb1f607f6a"
+    },
+    "published_test": {
+      "rows": 2697,
+      "class_counts": {
+        "forum": 450,
+        "promotions": 449,
+        "social_media": 449,
+        "spam": 449,
+        "updates": 449,
+        "verify_code": 451
+      },
+      "ids_sha256": "443184fab521027c8829d8fd516e4490dabc0072ff1c8dccfeec97f14c05074c"
+    }
+  },
+  "overlap_counts": {
+    "fit_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  }
+}

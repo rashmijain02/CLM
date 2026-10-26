@@ -1,0 +1,89 @@
+{
+  "paired_rows": 2697,
+  "accuracy_pre": 0.26881720430107525,
+  "accuracy_post": 0.9758991472005932,
+  "accuracy_delta": 0.707081942899518,
+  "accuracy_delta_bootstrap_95_ci": [
+    0.6978123841305154,
+    0.7159807193177605
+  ],
+  "macro_f1_delta_bootstrap_95_ci": [
+    0.8282720748960202,
+    0.843211502969644
+  ],
+  "mcnemar_baseline_wrong_tuned_correct": 1915,
+  "mcnemar_baseline_correct_tuned_wrong": 8,
+  "mcnemar_exact_pvalue": 0.0,
+  "calibration_pre": {
+    "ece_10": 0.3406452005300462,
+    "multiclass_brier": 1.0020033468801086
+  },
+  "calibration_post": {
+    "ece_10": 0.00702437088062138,
+    "multiclass_brier": 0.036418020881252025
+  },
+  "per_class_post": {
+    "forum": {
+      "precision": 0.9862385321100917,
+      "recall": 0.9555555555555556,
+      "f1-score": 0.9706546275395034,
+      "support": 450.0
+    },
+    "promotions": {
+      "precision": 0.9977426636568849,
+      "recall": 0.9844097995545658,
+      "f1-score": 0.9910313901345291,
+      "support": 449.0
+    },
+    "social_media": {
+      "precision": 0.9488272921108742,
+      "recall": 0.9910913140311804,
+      "f1-score": 0.9694989106753813,
+      "support": 449.0
+    },
+    "spam": {
+      "precision": 0.9650655021834061,
+      "recall": 0.9844097995545658,
+      "f1-score": 0.9746416758544653,
+      "support": 449.0
+    },
+    "updates": {
+      "precision": 0.9691629955947136,
+      "recall": 0.9799554565701559,
+      "f1-score": 0.9745293466223699,
+      "support": 449.0
+    },
+    "verify_code": {
+      "precision": 0.9908466819221968,
+      "recall": 0.9600886917960089,
+      "f1-score": 0.9752252252252253,
+      "support": 451.0
+    }
+  },
+  "seed_runs": [
+    {
+      "seed": 42,
+      "best_epoch": 12,
+      "internal_val_accuracy": 0.9895591647331786,
+      "development_accuracy": 0.9828385899814471,
+      "development_log_loss": 0.04639162336077009
+    },
+    {
+      "seed": 123,
+      "best_epoch": 10,
+      "internal_val_accuracy": 0.9872389791183295,
+      "development_accuracy": 0.9814471243042672,
+      "development_log_loss": 0.04683844189475773
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 15,
+      "internal_val_accuracy": 0.9895591647331786,
+      "development_accuracy": 0.988404452690167,
+      "development_log_loss": 0.034271473787268816
+    }
+  ],
+  "development_accuracy_mean": 0.9842300556586272,
+  "development_accuracy_std": 0.0036814721397002556,
+  "preselected_seed42_development_to_test_gap": 0.006939442780853899
+}
