@@ -7,6 +7,7 @@ checkpoints/
 data/
 *.pt
 *.pth
+/CLMClient/notebooks/artifacts/email_choice_finetune_v1/embeddings/choice_Qwen_Qwen3-8B_2048.npz
 # Python
 __pycache__/
 *.pyc
